@@ -57,6 +57,7 @@
         margin-top: 20px;
     }
     .subscribebutton {
+        font-size: 16px;
         padding: 0;
         border: none;
         background: none;
@@ -64,7 +65,6 @@
         color: #464646;
         border-bottom: 1px dotted #eb6ba9;
         margin-left: 5px;
-        font-size: 16px;
     }
     .subscribebutton:visited {
         color: #464646;
