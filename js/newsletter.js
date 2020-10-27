@@ -1,6 +1,6 @@
 $(function() {
-    $.getJSON('https://freelance.axelvf.com.ar/observando/mailchimp.php')
-     .success(function(data) {
+    $.getJSON('https://freelance.axelvf.com.ar/observando/mailchimp.php',
+     function(data) {
         var ul;
         for (var i = 0; i < data.length; i++) {
             ul = $('<li/>');
@@ -8,8 +8,8 @@ $(function() {
             $('ul').append(ul);
         }
     })
-    .error(function(e) {
-        console.error(e);
+    .fail(function() {
+        console.log( "Error al intentar obtener el feed" );
     })
 });
 
