@@ -285,6 +285,7 @@ optgroup,
 select,
 textarea {
     font-family: inherit;
+    color: #fff;
 }
 
 .is-visible {
@@ -3784,12 +3785,12 @@ screen and (min-width: 40em) {
     h4,
     .h4 {
         font-family: Calluna;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 56px;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 56px;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
         text-align: center;
         font-feature-settings: 'tnum'on, 'lnum'on;
     }
@@ -4183,7 +4184,7 @@ screen and (min-width: 64em) {
 }
 
 .bttnmodal:hover,
-.bttnmodal:focus{
+.bttnmodal:focus {
     background-color: #010E1A !important;
     padding: 15px 1em;
     color: #FFF9F2 !important;
@@ -4628,12 +4629,9 @@ textarea {
     color: #FFF9F2;
     border-bottom: 1px solid #FFF9F2;
     outline: none;
-    -webkit-box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
-    box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
     font-family: inherit;
     font-weight: normal;
     line-height: 1.5;
-    color: #0a0a0a;
     -webkit-transition: border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
     transition: border-color 0.25s ease-in-out, -webkit-box-shadow 0.5s;
     transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
