@@ -4,8 +4,8 @@ $(function() {
         var ul;
         for (var i = 0; i < data.length; i++) {
             ul = $('<li/>');
-            ul.append("" + formatDate(data[i].date) + " - <a href=" + data[i].link + ">" + data[i].title + "</a></li>");
-            $('ul').append(ul);
+            ul.append("" + formatDate(data[i].date) + " • <a href=" + data[i].link + ">" + data[i].title + "</a></li>");
+            $('ul.mydiv').append(ul);
         }
     })
     .fail(function() {
