@@ -129,9 +129,22 @@
 
         <div class="grid-x grid-padding-x">
             <div class="large-12 cell padding120">
-                <h2 class="borderp pb"><a href="http://us14.campaign-archive2.com/home/?u=d914367325f70121f44ffcafb&id=1d2d0d3d76">Últimas ediciones</a></h2>
-                <ul class="mydiv">
-                </ul>
+                <h2 class="borderp pb"><a href="https://observando.substack.com/">Últimas ediciones</a></h2>
+                <!-- <ul class="mydiv"> -->
+                <div id="substack-feed-embed"></div>
+                <script>
+                    window.SubstackFeedWidget = {
+                      substackUrl: "observando.substack.com",
+                      posts: 5,
+                      colors: {
+                        primary: "#FFF9F2",
+                        secondary: "#FFF9F2",
+                        background: "#010E1A",
+                      }
+                    };
+                  </script>
+                <script src="https://substackapi.com/embeds/feed.js" async></script>
+                <!-- </ul> -->
             </div>
         </div>
 
