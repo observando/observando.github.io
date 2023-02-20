@@ -1,25 +1,27 @@
-$(function() {
-    $.getJSON('https://freelance.axelvf.com.ar/observando/mailchimp.php',
-     function(data) {
-        var ul;
-        for (var i = 0; i < data.length; i++) {
-            ul = $('<li/>');
-            ul.append("" + formatDate(data[i].date) + " • <a href=" + data[i].link + ">" + data[i].title + "</a></li>");
-            $('ul.mydiv').append(ul);
-        }
-    })
-    .fail(function() {
-        console.log( "Error al intentar obtener el feed" );
-    })
-});
 
-function formatDate(userDate) {
-    var dateArr = userDate.split('/');
-    if (dateArr[0].length == 1) {
-        dateArr[0] = '0' + dateArr[0];
-    } else if (dateArr[1].length == 1) {
-        dateArr[1] = '0' + dateArr[1];
+var newsletter_feed = "observando.substack.com";
+var col_dark = "#010E1A";
+var col_light = "#FFF9F2";
+
+window.CustomSubstackWidget = {
+    substackUrl: newsletter_feed,
+    placeholder: "tumail@gmail.com",
+    buttonText: "Suscribirme",
+    theme: "custom",
+    colors: {
+      primary: col_light,
+      input: col_dark,
+      email: col_light,
+      text: col_dark,
     }
-    userDate = dateArr[1] + '/' + dateArr[0] + '/' + dateArr[2];
-    return userDate;
-}
+  };
+
+  window.SubstackFeedWidget = {
+    substackUrl: newsletter_feed,
+    posts: 5,
+    colors: {
+      primary: col_light,
+      secondary: col_light,
+      background: col_dark,
+    }
+  };
